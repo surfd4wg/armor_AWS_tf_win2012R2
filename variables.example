@@ -1,0 +1,59 @@
+variable "access_key" {
+  description = "Access Key to AWS account"
+  default     = "XXXXX"
+}
+
+variable "secret_key" {
+  description = "Secret Key to AWS account"
+  default     = "XXXXX"
+}
+
+variable "ARMKEY" {
+  description = "Armor License Key"
+  default = "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"
+}
+
+variable "public_key_path" {
+  description = "Path to the public SSH key you want to bake into the instance."
+  default     = "~/.ssh/<YOUR KEY NAME>.pub"
+}
+
+variable "private_key_path" {
+  description = "Path to the private SSH key, used to access the instance."
+  default     = "~/.ssh/<YOUR KEY NAME>.pem"
+}
+
+variable "admin_password" {
+  description = "Windows Administrator password to login as for provisioning"
+  default = "<Insert a strong password here>"
+}
+
+variable "key_name" {
+  description = "Name of the SSH keypair to use in AWS."
+  default = "<YOUR KEY NAME>"
+}
+
+variable "aws_region" {
+  description = "AWS region to launch servers."
+  default     = "us-east-1"
+}
+
+variable "aws_availzone" {
+  description = "AWS availibility zone to launch in."
+  default     = "us-east-1a"
+}
+
+variable "instance_name" {
+  description = "Name of your instance"
+  default     = "armor-Windows"
+}
+
+variable "INSTANCE_USERNAME" {
+  description = "Regular user, in Administrator group"
+  default = "<Insert new username>"
+}
+
+variable "INSTANCE_PASSWORD" {
+  description = "Regular user password"
+  default = "<Insert user pass>"
+}
