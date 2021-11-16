@@ -17,4 +17,4 @@ If the Armor Agent installed correctly, you should see the c:\armorinstall and c
 
 To change the dimensions of the powershell command window: #Powershell Command Window Size $pshost = get-host $pswindow = $pshost.ui.rawui $newsize = $pswindow.buffersize $newsize.height = 3000 $newsize.width = 200 $pswindow.buffersize = $newsize $newsize = $pswindow.windowsize $newsize.height = 90 $newsize.width = 200 $pswindow.windowsize = $newsize
 
-TO grep for processes, open a powershell command window... function grep { $input | out-string -stream | select-string $args } Get-Process | grep armor
+To grep for processes, open a powershell command window... function grep { $input | out-string -stream | select-string $args } Get-Process | grep armor
